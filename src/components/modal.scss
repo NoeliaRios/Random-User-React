@@ -1,6 +1,8 @@
 @import 'users.scss';
 
 .modal{
+    font-family: 'Red Hat Text',sans-serif;
+
     width: 100%;
         position: fixed;
         top: 0;
@@ -10,4 +12,82 @@
         height: 100vh;
         background: rgba(8,28,36,.98);
         @include center();
+        .box_modal{
+            background-color: #FAF8FF;
+            width: 30%;
+            height: 85%;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+            @include space();
+            flex-direction: column;
+            .exit_button{
+                position: relative;
+                top: -5px;
+                left: 49%;
+                background-color: transparent;
+                    border: none;
+                    .fas {
+                        font-size: 2em;
+                        
+                    }:hover{
+                cursor: pointer;
+            }
+            }
+            
+            .top{
+                width: 100%;
+                @include space();
+                flex-direction: row;
+                h4{
+                    color:#4a4a4a;
+                    font-weight: 400;
+                }
+                .fas{
+                    margin-right: 5px;
+                }
+                .photo{
+                    width:60%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 50%;
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+                    }
+                }
+            }
+            .info{
+                @include center();
+                flex-direction: column;
+                h1{
+                    font-weight: 700;
+                    font-size:1.5em;
+                    margin:5px;
+                    text-transform: capitalize;
+                }
+                h2{
+                    margin:0px;
+                    font-size: 1em;
+                    color:#4a4a4a;
+                    font-weight: 400;
+                }
+                p{
+                    font-style: italic;
+                    text-align: justify;
+                    font-size: 0.8em;
+                }
+                .email{
+                    font-style: normal;
+                }
+            }
+            .footer{
+                width: 70%;
+                margin: 20px 0px 10px;
+                @include space();
+                i {
+                    font-size: 2em;
+                }
+            }
+        }
 }
