@@ -1,0 +1,13 @@
+@import 'users.scss';
+
+.modal{
+    width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        overflow: auto;
+        height: 100vh;
+        background: rgba(8,28,36,.98);
+        @include center();
+}

@@ -1,0 +1,54 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin space() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+*{
+    box-sizing: border-box;
+}
+.user {
+    background-color:#fafafa;
+    padding: 20px;
+    margin: 10px;
+    width: 16%;
+    border-radius: 5px;
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,.5);
+    @include center();
+    flex-direction: column;
+    
+    .small_photo {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+        }
+    }
+    h1 {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 5px 0px 0px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1em;
+        font-weight: 500;
+        color: #4a4a4a;
+        margin:0px;
+    }
+    h3 {
+        font-size: 1em;
+        color: #4a4a4a;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+

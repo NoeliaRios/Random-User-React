@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+.Main {
+	background-color: #f8f8f8;
+	padding: 0px 70px;
+}
+.container__users {
+	font-family: 'Red Hat Text',sans-serif;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 30px 0px;
+	-webkit-transition: -webkit-transform 1s ease-out;
+	-moz-transition: -moz-transform 1s ease-out;
+	-o-transition: -o-transform 1s ease-out;
+	-ms-transition: -ms-transform 1s ease-out;
+	transition: transform 1s ease-out;
+	:hover {
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		cursor: pointer;
+	}
+}
